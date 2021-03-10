@@ -13,4 +13,3 @@ Domain Path:     /languages
 Text Domain:     rrze-neko
 */
 
-echo 'This is rrze-neko';
