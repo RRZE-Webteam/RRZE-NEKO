@@ -32,9 +32,9 @@ use NEKO\Basis\Main;
 // require_once __DIR__ . '/config/config.php';
 
 // Automatische Laden von Klassen.
-//if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-//    require_once __DIR__ . '/vendor/autoload.php';
-//}
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require_once __DIR__ . '/vendor/autoload.php';
+}
 
 const RRZE_PHP_VERSION = '7.4';
 const RRZE_WP_VERSION = '5.3';
@@ -66,9 +66,9 @@ function systemRequirements()
     } elseif (version_compare($GLOBALS['wp_version'], RRZE_WP_VERSION, '<')) {
         /* Übersetzer: 1: aktuelle WP-Version, 2: erforderliche WP-Version */
         $error = sprintf(__('The server is running WordPress version %1$s. The Plugin requires at least WordPress version %2$s.', 'neko-basis'), $GLOBALS['wp_version'], RRZE_WP_VERSION);
-    } //elseif (!file_exists(__DIR__ . '/vendor/autoload.php')) {
-      //  $error = sprintf(__('%s does not exist.', 'neko-basis'), substr(__DIR__, strrpos(__DIR__, '/') + 1) . '/vendor/autoload.php');
-    //}
+    } elseif (!file_exists(__DIR__ . '/vendor/autoload.php')) {
+        $error = sprintf(__('%s does not exist.', 'neko-basis'), substr(__DIR__, strrpos(__DIR__, '/') + 1) . '/vendor/autoload.php');
+    }
     return $error;
 }
 
