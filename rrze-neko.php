@@ -4,7 +4,7 @@
 Plugin Name:     RRZE NEKO
 Plugin URI:      https://github.com/RRZE-Webteam/RRZE-NEKO
 Description:     WordPress plugin with the famous NEKO cat >^.^< Testtext 
-Version:         0.1
+Version:         0.1.69
 Author:          RRZE Webteam
 Author URI:      https://blogs.fau.de/webworking/
 License:         GNU General Public License v3
