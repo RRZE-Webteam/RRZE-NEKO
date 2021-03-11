@@ -18,3 +18,5 @@ add_action('wp_enqueue_scripts','neko_init');
 function neko_init() {
     wp_enqueue_script( 'n20171213.js', plugins_url( 'https://webneko.net/n20171213.js', __FILE__ ));
 }
+
+?>
