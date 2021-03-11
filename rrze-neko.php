@@ -3,7 +3,7 @@
 /*
 Plugin Name:     RRZE NEKO
 Plugin URI:      https://github.com/RRZE-Webteam/RRZE-NEKO
-Description:     WordPress plugin with the famous NEKO cat >^.^<  
+Description:     WordPress plugin with the famous NEKO cat >^.^< Testtext 
 Version:         0.1
 Author:          RRZE Webteam
 Author URI:      https://blogs.fau.de/webworking/
