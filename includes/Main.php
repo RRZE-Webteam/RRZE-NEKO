@@ -5,7 +5,7 @@ namespace NEKO\Basis;
 defined('ABSPATH') || exit;
 
 // use CMS\Basis\Settings;
-use CMS\Basis\Shortcode;
+use NEKO\Basis\Shortcode;
 
 
 /**
