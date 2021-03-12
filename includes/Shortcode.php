@@ -53,7 +53,7 @@ class Shortcode
     public function enqueueScripts()
     {
         // wp_register_style('cms-basis-shortcode', plugins_url('assets/css/shortcode.css', plugin_basename($this->pluginFile)));
-        wp_register_script('neko', plugins_url('assets/js/neko.js', plugin_basename($this->pluginFile)));
+        wp_register_script('neko', plugins_url('/assets/js/neko.js', plugin_basename($this->pluginFile)));
     }
 
 
