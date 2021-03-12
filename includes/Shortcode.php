@@ -92,7 +92,7 @@ class Shortcode
         return $output;
         */
 
-        
+        NekoType="white" 
         wp_enqueue_script( 'neko', 'https://webneko.net/n20171213.js' );
 
         return;
