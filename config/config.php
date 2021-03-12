@@ -1,6 +1,6 @@
 <?php
 
-namespace NEKO\Basis\Config;
+namespace NEKO\Config;
 
 defined('ABSPATH') || exit;
 

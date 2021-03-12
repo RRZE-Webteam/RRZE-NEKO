@@ -1,11 +1,11 @@
 <?php
 
-namespace NEKO\Basis;
+namespace NEKO;
 
 defined('ABSPATH') || exit;
 
-use NEKO\Basis\Settings;
-use NEKO\Basis\Shortcode;
+use NEKO\Settings;
+use NEKO\Shortcode;
 
 
 /**

@@ -1,14 +1,14 @@
 <?php
 
-namespace NEKO\Basis;
+namespace NEKO;
 
 defined('ABSPATH') || exit;
 
-use function NEKO\Basis\Config\getOptionName;
-use function NEKO\Basis\Config\getMenuSettings;
-use function NEKO\Basis\Config\getHelpTab;
-use function NEKO\Basis\Config\getSections;
-use function NEKO\Basis\Config\getFields;
+use function NEKO\Config\getOptionName;
+use function NEKO\Config\getMenuSettings;
+use function NEKO\Config\getHelpTab;
+use function NEKO\Config\getSections;
+use function NEKO\Config\getFields;
 
 /**
  * Settings-Klasse
