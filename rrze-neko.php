@@ -13,7 +13,7 @@ Domain Path:     /languages
 Text Domain:     rrze-neko
 */
 
-namespace NEKO\Basis;
+namespace NEKO;
 
 /*
 Die Codezeile defined('ABSPATH') || exit;
@@ -26,7 +26,7 @@ was zu unerwartetem Verhalten führen kann.
 
 defined('ABSPATH') || exit;
 
-use NEKO\Basis\Main;
+use NEKO\Main;
 
 // Laden der Konfigurationsdatei
 require_once __DIR__ . '/config/config.php';

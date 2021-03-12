@@ -1,9 +1,9 @@
 <?php
 
-namespace NEKO\Basis;
+namespace NEKO;
 
 defined('ABSPATH') || exit;
-use function NEKO\Basis\Config\getShortcodeSettings;
+use function NEKO\Config\getShortcodeSettings;
 
 
 
