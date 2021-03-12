@@ -31,10 +31,23 @@ use NEKO\Main;
 // Laden der Konfigurationsdatei
 require_once __DIR__ . '/config/config.php';
 
-// Automatische Laden von Klassen.
-if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-    require_once __DIR__ . '/vendor/autoload.php';
-}
+// Autoloader (PSR-4)
+spl_autoload_register(function ($class) {
+    $prefix = __NAMESPACE__;
+    $base_dir = __DIR__ . '/includes/';
+
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+
+    $relativeClass = substr($class, $len);
+    $file = $base_dir . str_replace('\\', '/', $relativeClass) . '.php';
+
+    if (file_exists($file)) {
+        require $file;
+    }
+});
 
 const RRZE_PHP_VERSION = '7.4';
 const RRZE_WP_VERSION = '5.3';
