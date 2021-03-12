@@ -4,7 +4,7 @@ namespace NEKO;
 
 defined('ABSPATH') || exit;
 
-use NEKO\Settings;
+// use NEKO\Settings;
 use NEKO\Shortcode;
 
 
@@ -33,8 +33,9 @@ class Main {
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
 
         // Settings-Klasse wird instanziiert.
-        $settings = new Settings($this->pluginFile);
-        $settings->onLoaded();
+        // $settings = new Settings($this->pluginFile);
+        // $settings->onLoaded();
+        $settings = '';
 
         // Shortcode-Klasse wird instanziiert.
         $shortcode = new Shortcode($this->pluginFile, $settings);
@@ -45,6 +46,6 @@ class Main {
      * Enqueue der globale Skripte.
      */
     public function enqueueScripts() {
-        wp_register_style('neko-basis', plugins_url('assets/css/plugin.css', plugin_basename($this->pluginFile)));
+        // wp_register_style('neko-basis', plugins_url('assets/css/plugin.css', plugin_basename($this->pluginFile)));
     }
 }
