@@ -189,7 +189,7 @@ function getFields()
 function getShortcodeSettings(){
 	return [
 		'block' => [
-            'blocktype' => 'cms-basis/SHORTCODE-NAME', // dieser Wert muss angepasst werden
+            'blocktype' => 'neko-basis/SHORTCODE-NAME', // dieser Wert muss angepasst werden
 			'blockname' => 'SHORTCODE-NAME', // dieser Wert muss angepasst werden
 			'title' => 'SHORTCODE-TITEL', // Der Titel, der in der Blockauswahl im Gutenberg Editor angezeigt wird
 			'category' => 'widgets', // Die Kategorie, in der der Block im Gutenberg Editor angezeigt wird
@@ -199,41 +199,41 @@ function getShortcodeSettings(){
 		'Beispiel-Textfeld-Text' => [
 			'default' => 'ein Beispiel-Wert',
 			'field_type' => 'text', // Art des Feldes im Gutenberg Editor
-			'label' => __( 'Beschriftung', 'cms-basis' ),
+			'label' => __( 'Beschriftung', 'neko-basis' ),
 			'type' => 'string' // Variablentyp der Eingabe
 		],
 		'Beispiel-Textfeld-Number' => [
 			'default' => 0,
 			'field_type' => 'text', // Art des Feldes im Gutenberg Editor
-			'label' => __( 'Beschriftung', 'cms-basis' ),
+			'label' => __( 'Beschriftung', 'neko-basis' ),
 			'type' => 'number' // Variablentyp der Eingabe
 		],
 		'Beispiel-Textarea-String' => [
 			'default' => 'ein Beispiel-Wert',
 			'field_type' => 'textarea',
-			'label' => __( 'Beschriftung', 'cms-basis' ),
+			'label' => __( 'Beschriftung', 'neko-basis' ),
 			'type' => 'string',
 			'rows' => 5 // Anzahl der Zeilen 
 		],
 		'Beispiel-Radiobutton' => [
 			'values' => [
-				'wert1' => __( 'Wert 1', 'cms-basis' ), // wert1 mit Beschriftung
-				'wert2' => __( 'Wert 2', 'cms-basis' )
+				'wert1' => __( 'Wert 1', 'neko-basis' ), // wert1 mit Beschriftung
+				'wert2' => __( 'Wert 2', 'neko-basis' )
 			],
 			'default' => 'DESC', // vorausgewählter Wert
 			'field_type' => 'radio',
-			'label' => __( 'Order', 'cms-basis' ), // Beschriftung der Radiobutton-Gruppe
+			'label' => __( 'Order', 'neko-basis' ), // Beschriftung der Radiobutton-Gruppe
 			'type' => 'string' // Variablentyp des auswählbaren Werts
 		],
 		'Beispiel-Checkbox' => [
 			'field_type' => 'checkbox',
-			'label' => __( 'Beschriftung', 'cms-basis' ),
+			'label' => __( 'Beschriftung', 'neko-basis' ),
 			'type' => 'boolean',
 			'default'   => true // Vorauswahl: Haken gesetzt
         ],
         'Beispiel-Toggle' => [
             'field_type' => 'toggle',
-            'label' => __( 'Beschriftung', 'cms-basis' ),
+            'label' => __( 'Beschriftung', 'neko-basis' ),
             'type' => 'boolean',
             'default'   => true // Vorauswahl: ausgewählt
         ],
@@ -241,16 +241,16 @@ function getShortcodeSettings(){
 			'values' => [
                 [
                     'id' => 'wert1',
-                    'val' =>  __( 'Wert 1', 'cms-basis' )
+                    'val' =>  __( 'Wert 1', 'neko-basis' )
                 ],
                 [
                     'id' => 'wert2',
-                    'val' =>  __( 'Wert 2', 'cms-basis' )
+                    'val' =>  __( 'Wert 2', 'neko-basis' )
                 ],
 			],
 			'default' => 'wert1', // vorausgewählter Wert: Achtung: string, kein array!
 			'field_type' => 'select',
-			'label' => __( 'Beschriftung', 'cms-basis' ),
+			'label' => __( 'Beschriftung', 'neko-basis' ),
 			'type' => 'string' // Variablentyp des auswählbaren Werts
 		],
         'Beispiel-Multi-Select' => [

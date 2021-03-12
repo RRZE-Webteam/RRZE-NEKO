@@ -1,9 +1,9 @@
 <?php
 
-namespace CMS\Basis;
+namespace NEKO\Basis;
 
 defined('ABSPATH') || exit;
-use function CMS\Basis\Config\getShortcodeSettings;
+use function NEKO\Basis\Config\getShortcodeSettings;
 
 
 
@@ -44,7 +44,7 @@ class Shortcode
     public function onLoaded()
     {
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
-        add_shortcode('cms_basis_shortcode', [$this, 'shortcodeOutput'], 10, 2);
+        add_shortcode('neko', [$this, 'shortcodeOutput'], 10, 2);
     }
 
     /**
@@ -52,8 +52,8 @@ class Shortcode
      */
     public function enqueueScripts()
     {
-        wp_register_style('cms-basis-shortcode', plugins_url('assets/css/shortcode.css', plugin_basename($this->pluginFile)));
-        wp_register_script('cms-basis-shortcode', plugins_url('assets/js/shortcode.js', plugin_basename($this->pluginFile)));
+        // wp_register_style('cms-basis-shortcode', plugins_url('assets/css/shortcode.css', plugin_basename($this->pluginFile)));
+        wp_register_script('neko', plugins_url('assets/js/neko.js', plugin_basename($this->pluginFile)));
     }
 
 
@@ -65,6 +65,7 @@ class Shortcode
      */
     public function shortcodeOutput( $atts ) {
         // merge given attributes with default ones
+        /*
         $atts_default = array();
         foreach( $this->settings as $k => $v ){
             if ( $k != 'block' ){
@@ -89,6 +90,12 @@ class Shortcode
         wp_enqueue_script('cms-basis-shortcode');
 
         return $output;
+        */
+
+        
+        wp_enqueue_script( 'neko' );
+        
+        
     }
 
     public function isGutenberg(){
