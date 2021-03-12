@@ -45,6 +45,6 @@ class Main {
      * Enqueue der globale Skripte.
      */
     public function enqueueScripts() {
-        wp_register_style('neko-basis', plugins_url('assets/css/plugin.css', plugin_basename($this->pluginFile)));
+        // wp_register_style('neko-basis', plugins_url('assets/css/plugin.css', plugin_basename($this->pluginFile)));
     }
 }

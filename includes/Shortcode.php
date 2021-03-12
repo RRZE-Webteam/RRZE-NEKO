@@ -33,8 +33,8 @@ class Shortcode
     {
         $this->pluginFile = $pluginFile;
         $this->settings = getShortcodeSettings();
-        add_action( 'admin_enqueue_scripts', [$this, 'enqueueGutenberg'] );
-        add_action( 'init',  [$this, 'initGutenberg'] );
+        // add_action( 'admin_enqueue_scripts', [$this, 'enqueueGutenberg'] );
+        // add_action( 'init',  [$this, 'initGutenberg'] );
     }
 
     /**
@@ -94,6 +94,8 @@ class Shortcode
 
         
         wp_enqueue_script( 'neko' );
+
+        return;
         
         
     }
