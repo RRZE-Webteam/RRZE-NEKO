@@ -1,6 +1,6 @@
 {
-	"name": "cms/cms-basis",
-	"description": "Basic template for all WordPress CMS plugins.",
+	"name": "neko/neko-basis",
+	"description": "NEKO NEKO NEKO",
 	"type": "wordpress-plugin",
 	"license": "GNU General Public License v2",
 	"require": {
@@ -9,7 +9,7 @@
 	"autoload": {
 		"files": ["vendor/cmb2/cmb2/init.php"],
 		"psr-4": {
-			"CMS\\Basis\\": "includes/"
+			"NEKO\\Basis\\": "includes/"
 		}
 	}
 }
